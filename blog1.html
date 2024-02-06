@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog 1</title>
+    <link href="blogstyle.css" rel="stylesheet">
+    <script src="script1.js"></script>
+</head>
+<body>
+    <div class="outer">
+        <div id="heading">AI's Shadows: Navigating Disadvantages</div>
+
+        <div id="like">
+            <a onclick="likeCounter()"><img src="unlike.png" alt="like-button" class="like-button" id="like-button"></a>
+            <div id="likeCount">0</div>
+        </div>
+
+        <a onclick="toggleMode()"><img src="day-mode.png" alt="toggle-button" id="toggle"></a>
+
+
+        <div id="content">
+            Artificial Intelligence (AI) stands as a beacon of innovation, yet its brilliance casts shadows of concern.
+            Job displacement looms large as automation takes center stage, demanding a careful equilibrium between progress
+            and job stability. Biases woven into AI algorithms from historical data raise ethical dilemmas, requiring concerted
+            efforts to ensure fairness. The widespread use of AI in surveillance triggers privacy concerns, urging a delicate
+            balance between convenience and personal privacy. Dependence on AI exposes us to cybersecurity risks, demanding 
+            robust safeguards. Ethical decision-making, as AI impacts human lives, necessitates clear guidelines and accountability.
+            In our quest for progress, acknowledging and addressing these challenges ensures a responsible and sustainable
+            integration of AI into our rapidly evolving world.
+        </div>
+
+        <div class="comments">
+            <div id="display-comments"></div>
+
+            <div class="add-comment">
+                <textarea id="comment" placeholder="Add a comment" rows="2" required style="width: 90%; font-size: 150%;"></textarea>
+                <button onclick="addComment()" id="add">Add Comment</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        display_all_comments();
+        displaylikes();
+    </script>
+</body>
+</html>

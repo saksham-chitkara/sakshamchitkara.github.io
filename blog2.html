@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog 2</title>
+    <link href="blogstyle.css" rel="stylesheet">
+    <script src="script2.js"></script>
+</head>
+<body>
+    <div class="outer">
+        <div id="heading">Warming Planets, Cooling Resolve: Navigating Global Warming</div>
+
+        <div id="like">
+            <a onclick="likeCounter()"><img src="unlike.png" alt="like-button" class="like-button" id="like-button"></a>
+            <div id="likeCount">0</div>
+        </div>
+
+        <a onclick="toggleMode()"><img src="day-mode.png" alt="toggle-button" id="toggle"></a>
+
+
+        <div id="content">
+            Global warming, an undeniable reality, paints a vivid picture of planetary transformation. Witness the poignant melody of
+            melting ice caps and glaciers, altering landscapes with an irreversible touch. Dive into the azure depths, where coral reefs
+            face a bleaching crisis, mirroring the urgency for marine conservation. The stage is set for an unpredictable weather ballet,
+            with extreme events reshaping climate patterns globally. Unravel the intricate dance of the carbon footprint tango, where human
+            choices echo through rising greenhouse gas emissions. Yet, in this narrative of challenge, a call to environmental stewardship
+            emerges — a collective effort to nurture a greener tomorrow. Let us heed this call, weaving threads of resilience and
+            preservation into the fabric of our planet's story, as we confront the profound consequences of global warming.
+        </div>
+
+        <div class="comments">
+            <div id="display-comments"></div>
+
+            <div class="add-comment">
+                <textarea id="comment" placeholder="Add a comment" rows="2" required style="width: 90%; font-size: 150%;"></textarea>
+                <button onclick="addComment()" id="add">Add Comment</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        display_all_comments();
+        displaylikes();
+    </script>
+</body>
+</html>

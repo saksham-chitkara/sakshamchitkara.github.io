@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saksham</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="node.js"></script>
+</head>
+<body class="body-dark">
+    <nav class="nav-dark" id="navbar" style="text-align: center;">
+        <button onclick="changeContent('about'); activeClass(this);" class="button-dark active">About</button>
+        <button onclick="changeContent('education'); activeClass(this);" class="button-dark">Education</button>
+        <button onclick="changeContent('achievements'); activeClass(this);" class="button-dark">Achievements</button>
+        <button onclick="changeContent('skill'); activeClass(this);" class="button-dark">Skills</button>
+        <button onclick="changeContent('blog'); activeClass(this);" class="button-dark">Blog</button>
+    </nav>
+
+    <div class="outermost" >
+        <div class="image" class="image-dark" id="image">
+            <img src="profile.jpg" alt="profile" class="profile"><br>
+            
+            <span style="font-family: Arial, Helvetica, sans-serif; font-size: 170%;" class="text-dark" id="text">Saksham Chitkara</span>
+            <div style="margin-top: 5%;" class="socials">
+                <a href="https://github.com/saksham-chitkara" target="_blank" title="GitHub"><img class="social-icons" src="github-icon.png" alt="GitHub"></a>
+                <a href="mailto:sakshamchitkara03@gmail.com" title="Gmail" target="_blank"><img src="gmail.png" alt="Email" class="social-icons"></a>
+                <a href="https://www.linkedin.com/in/saksham-chitkara-35945527b/" title="Linkedin" target="_blank"><img src="linkedin.png" alt="Linked In" class="social-icons"></a>
+            </div>
+
+            <a onclick="toggleMode()"><img src="day-mode.png" alt="toggle-button" id="toggle"></a>
+
+        </div>
+        <div class="content" class="dark-mode" id="content" >
+
+            <h1>About Me</h1>
+            <p>
+                Hi, I'm Saksham Chitkara, a freshman at IIIT Hyderabad pursuing a Bachelor's Degree in Computer Science.
+            </p>
+            <p>
+                Originally from Haryana, I'm 18 years old and passionate about exploring the vast world of technology. In addition to my academic pursuits, I find joy in playing cricket.
+            </p>
+            <p>
+                I'm an avid gamer who enjoys the adrenaline rush of battle royale games. When I'm not gaming, you can often find me immersed in the world of esports, witnessing the excitement and skill of competitive gaming.
+            </p>
+            <a href="Trees.pdf" download>Link to external pdf</a>
+        </div>
+    </div>
+</body>
+</html>
